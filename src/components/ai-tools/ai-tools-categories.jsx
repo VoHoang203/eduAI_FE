@@ -1,55 +1,10 @@
 import {Link} from "react-router-dom"
 import { categories } from "./tool-data/categories"
 import "./tools-categories.css"
-import logo from "../../assets/logo.png"
 export default function AiToolsCategories() {
   return (
     <div className="container">
-      <header className="header">
-        <div className="header-content">
-          <div className="logo-container">
-            <img
-              src={logo}
-              alt="Futurepedia Logo"
-              width={40}
-              height={40}
-              className="logo"
-            />
-            <h1 className="site-name">EduAI</h1>
-          </div>
-
-          <nav className="main-nav">
-            <Link to="/" className="nav-link">
-              AI Tools
-            </Link>
-            <Link to="/business" className="nav-link">
-              AI for Business
-            </Link>
-            {/* <div className="nav-link new-badge">
-              AI Courses
-              <span className="badge">NEW</span>
-            </div> */}
-            <Link to="/courses" className="nav-link">
-              Ai course
-            </Link>
-            <Link to="/advertise" className="nav-link">
-              Advertise
-            </Link>
-            <Link to="/resources" className="nav-link">
-              Resources
-            </Link>
-          </nav>
-
-          <div className="auth-buttons">
-            <Link to="/login" className="login-button">
-              Login
-            </Link>
-            <Link to="/signup" className="signup-button">
-              Sign up for free
-            </Link>
-          </div>
-        </div>
-      </header>
+      
 
       <div className="breadcrumb">
         <Link to="/">Home</Link> &gt; AI Tools
