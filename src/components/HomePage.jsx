@@ -2,23 +2,24 @@ import React from "react";
 import { 
   FaHome, 
   FaShieldAlt, 
-  FaCalendarAlt, 
   FaBell, 
-  FaBookmark, 
   FaComments, 
-  FaHeart, 
   FaShoppingCart, 
-  FaUser 
+  FaStore,
+  FaBookmark ,
 } from "react-icons/fa";
+import { MdOutlineShop2 } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import logo from "../assets/logo.png"
-import profile from "../assets/profile.png"
+import profile from "../assets/profile2.jpg"
 import postpic from "../assets/postpic.png"
 import adSighBar from "../assets/adSightBar.png"
 import "../styles/homepage.css";
 import meta from "../assets/meta.png"
 import { PiHeadCircuitLight } from "react-icons/pi"
 import MuiPost from "./MUIPost";
+import { Link } from "react-router-dom";
+import { IoBarChartSharp } from "react-icons/io5";
 //app-container
 export default function HomePage() {
   return (
@@ -39,24 +40,25 @@ export default function HomePage() {
             </div>
           </div>
           <div className="navbar-center">
-            <div className="nav-icon-container">
+            <Link to="/" className="nav-icon-container">
               <FaHome className="nav-icon" />
-            </div>
-            <div className="nav-icon-container">
+            </Link>
+            <Link to="/profile" className="nav-icon-container">
               <FaShieldAlt className="nav-icon" />
-            </div>
-            <div className="nav-icon-container">
-              <FaCalendarAlt className="nav-icon" />
-            </div>
-            <div className="nav-icon-container">
-              <FaBell className="nav-icon" />
-              <span className="notification-badge">1</span>
-            </div>
+            </Link>
+            <Link to="/courses" className="nav-icon-container">
+              <MdOutlineShop2 className="nav-icon" />
+            </Link>
+            
             <div className="nav-icon-container">
               <FaBookmark className="nav-icon" />
             </div>
           </div>
           <div className="navbar-right">
+          <div className="nav-icon-container">
+              <FaBell className="nav-icon" />
+              <span className="notification-badge">1</span>
+            </div>
             <div className="nav-icon-container">
               <FaComments className="nav-icon" />
             </div>
@@ -72,39 +74,37 @@ export default function HomePage() {
         </nav>
       </header>
       {/* Main Content */}
-      <div className="hero-section">
-            {/* <div className="hero-text">
+      {/* <div className="hero-section">
+             <div className="hero-text">
               <h2 className="hero-title">Phần mềm quản lý đơn hàng Tuha</h2>
               <h1 className="hero-subtitle">AI và sự tự động hóa trong quảng cáo Facebook</h1>
-            </div> */}
-            <div className="hero-img">
-              <img src={meta} alt="Robot" className="meta-img" />
-            </div>
-          </div>
+            </div> 
+            
+          </div> */}
       <div className="main-content">
         {/* Left Sidebar */}
         <div className="sidebar left-sidebar">
           <div className="sidebar-item">
-            <div className="sidebar-icon purple">
+            <Link to="/ai-tools" className="sidebar-icon purple">
               <PiHeadCircuitLight alt="AI" />
+            </Link>
+            <span className="sidebar-text">AI Tools</span>
+          </div>
+          <div className="sidebar-item">
+            <div className="sidebar-icon purple">
+              <FaStore alt="AI" />
             </div>
             <span className="sidebar-text">AI Market</span>
           </div>
           <div className="sidebar-item">
             <div className="sidebar-icon purple">
-              <PiHeadCircuitLight alt="AI" />
+            <IoBarChartSharp />
             </div>
             <span className="sidebar-text">AI Market</span>
           </div>
           <div className="sidebar-item">
             <div className="sidebar-icon purple">
-              <PiHeadCircuitLight alt="AI" />
-            </div>
-            <span className="sidebar-text">AI Market</span>
-          </div>
-          <div className="sidebar-item">
-            <div className="sidebar-icon purple">
-              <PiHeadCircuitLight alt="AI" />
+              <FaBookmark alt="AI" />
             </div>
             <span className="sidebar-text">AI Market</span>
           </div>
@@ -113,6 +113,9 @@ export default function HomePage() {
        
         {/* Center Content */}
         <div className="center-content">
+        <div className="hero-img">
+              <img src={meta} alt="Robot" className="meta-img" />
+            </div>
           <MuiPost author="Hoàng Ming"
               avatar={profile}
               image={postpic}
@@ -206,11 +209,15 @@ Tôi đã viết lại code từ Claude 3.7 Web Crawler, thay vì dùng API củ
               <p className="ad-text">MXH trí tuệ nhân tạo</p>
             </div>
             <div className="ad-card">
+              <img src={adSighBar} alt="Ad" width={180} height={100} />
+              <p className="ad-text">MXH trí tuệ nhân tạo</p>
+            </div>
+            {/* <div className="ad-card">
               <div className="ad-image-container">
                 <img src={adSighBar} alt="Ad" width={180} height={100} />
               </div>
               <p className="ad-text">MXH trí tuệ nhân tạo</p>
-            </div>
+            </div> */}
           </div>
 
           <div className="recommendations">
