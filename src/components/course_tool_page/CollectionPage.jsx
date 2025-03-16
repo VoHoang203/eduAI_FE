@@ -66,7 +66,6 @@ export default function CollectionsPage() {
 
   return (
     <div className={styles.container}>
-      
       <div className={styles.pageLayout}>
         <Sidebar />
         <main className={styles.main}>

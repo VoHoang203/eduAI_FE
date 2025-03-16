@@ -44,7 +44,7 @@ const courseData = {
   ],
 }
 
-export default function CourseDetailPage({ params,image }) {
+export default function CourseDetailPage({image }) {
 
 
   return (
