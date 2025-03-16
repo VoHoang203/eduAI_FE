@@ -1,16 +1,9 @@
 import React from "react";
 import { 
-  FaHome, 
-  FaShieldAlt, 
-  FaBell, 
-  FaComments, 
-  FaShoppingCart, 
   FaStore,
   FaBookmark ,
 } from "react-icons/fa";
-import { MdOutlineShop2 } from "react-icons/md";
-import { IoSearch } from "react-icons/io5";
-import logo from "../assets/logo.png"
+
 import profile from "../assets/profile2.jpg"
 import postpic from "../assets/postpic.png"
 import adSighBar from "../assets/adSightBar.png"
@@ -25,54 +18,7 @@ export default function HomePage() {
   return (
     <div className="">
       {/* Header */}
-      <header className="header">
       
-
-        {/* Navigation Bar */}
-        <nav className="navbar">
-          <div className="navbar-left">
-          <div className="logo-container">
-            <img src={logo} className="logo-image"  alt="Logo" />
-          </div>
-            <div className="search-container">
-              <IoSearch className="search-icon" />
-              <input type="text" placeholder="Tìm kiếm trên EduAI" className="search-input" />
-            </div>
-          </div>
-          <div className="navbar-center">
-            <Link to="/" className="nav-icon-container">
-              <FaHome className="nav-icon" />
-            </Link>
-            <Link to="/profile" className="nav-icon-container">
-              <FaShieldAlt className="nav-icon" />
-            </Link>
-            <Link to="/courses" className="nav-icon-container">
-              <MdOutlineShop2 className="nav-icon" />
-            </Link>
-            
-            <div className="nav-icon-container">
-              <FaBookmark className="nav-icon" />
-            </div>
-          </div>
-          <div className="navbar-right">
-          <div className="nav-icon-container">
-              <FaBell className="nav-icon" />
-              <span className="notification-badge">1</span>
-            </div>
-            <div className="nav-icon-container">
-              <FaComments className="nav-icon" />
-            </div>
-            <div className="nav-icon-container">
-              <FaShoppingCart className="nav-icon" />
-            </div>
-            <div className="nav-icon-container">
-              <div className="user-avatar">
-                <img src={profile} alt="User"className="logo-image"  />
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
       {/* Main Content */}
       {/* <div className="hero-section">
              <div className="hero-text">
@@ -100,13 +46,13 @@ export default function HomePage() {
             <div className="sidebar-icon purple">
             <IoBarChartSharp />
             </div>
-            <span className="sidebar-text">AI Market</span>
+            <span className="sidebar-text">My AI Store</span>
           </div>
           <div className="sidebar-item">
             <div className="sidebar-icon purple">
               <FaBookmark alt="AI" />
             </div>
-            <span className="sidebar-text">AI Market</span>
+            <span className="sidebar-text">Saved</span>
           </div>
           
         </div>

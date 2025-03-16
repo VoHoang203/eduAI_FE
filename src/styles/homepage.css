@@ -681,7 +681,7 @@ body {
   border: 2px solid transparent;
 }
 
-/ .user-avatar:hover {
+.user-avatar:hover {
   border: 2px solid transparent;
   box-shadow: none;
 }
