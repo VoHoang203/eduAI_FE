@@ -1,0 +1,88 @@
+/* Alternative CSS file approach if you prefer */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 24px;
+}
+
+.auth-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.auth-password-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.auth-checkbox-container {
+  margin-bottom: 16px;
+}
+
+.auth-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.auth-checkbox {
+  margin-right: 8px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.auth-footer {
+  text-align: center;
+  color: #666;
+}
+
+.auth-link {
+  color: #333;
+  text-decoration: none;
+}
+
