@@ -7,7 +7,7 @@ import {
   FaStore,
   FaBookmark ,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { PiHeadCircuitLight } from "react-icons/pi"
 import { IoSearch } from "react-icons/io5";
 import logo from "../assets/logo.png"
@@ -17,8 +17,6 @@ import { IoBarChartSharp } from "react-icons/io5";
 export default function Header() {
   return (
     <header className="header">
-      
-
         {/* Navigation Bar */}
         <nav className="navbar">
           <div className="navbar-left">

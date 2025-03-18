@@ -129,7 +129,7 @@ export default function RegisterPage() {
               <label style={{ fontSize: "0.875rem", fontWeight: "500" }}>Username</label>
               <input
                 type="text"
-                placeholder="johndoe"
+                placeholder="full name "
                 {...form.register("username")}
                 style={{
                   width: "100%",
@@ -150,7 +150,7 @@ export default function RegisterPage() {
               <label style={{ fontSize: "0.875rem", fontWeight: "500" }}>Email</label>
               <input
                 type="email"
-                placeholder="john.doe@example.com"
+                placeholder="name.fulle@example.com"
                 {...form.register("email")}
                 style={{
                   width: "100%",

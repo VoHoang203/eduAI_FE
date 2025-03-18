@@ -16,7 +16,7 @@ import Mainlayout from './components/Mainlayout';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes >
-      <Route element={<Mainlayout  />}>
+      <Route element={<Mainlayout/>}>
         <Route path="/" element={<App />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />

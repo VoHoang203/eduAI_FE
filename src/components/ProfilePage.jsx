@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import {Link ,useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import { Loader2, Settings, LogOut, Pencil } from "lucide-react"
 
 import profile1 from "../assets/profile2.jpg"

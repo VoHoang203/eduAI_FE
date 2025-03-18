@@ -7,11 +7,6 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { Loader2 } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-
 const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
@@ -127,7 +122,7 @@ export default function LoginPage() {
               <label style={{ fontSize: "0.875rem", fontWeight: "500" }}>Email</label>
               <input
                 type="email"
-                placeholder="john.doe@example.com"
+                placeholder="name.full@example.com"
                 {...form.register("email")}
                 style={{
                   width: "100%",
