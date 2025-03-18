@@ -70,6 +70,7 @@ body {
 .search-container {
   display: flex;
   align-items: center;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 5px 15px;
@@ -85,6 +86,7 @@ body {
   background: transparent;
   border: none;
   color: white;
+  height: 100%;
   outline: none;
   width: 100%;
 }
@@ -537,7 +539,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-
 
 .sidebar-item:hover {
   background-color: cyan;
