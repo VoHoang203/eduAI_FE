@@ -7,7 +7,7 @@ import {
   FaStore,
   FaBookmark ,
 } from "react-icons/fa";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { PiHeadCircuitLight } from "react-icons/pi"
 import { IoSearch } from "react-icons/io5";
 import logo from "../assets/logo.png"
