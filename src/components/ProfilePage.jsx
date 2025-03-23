@@ -25,7 +25,7 @@ export default function ProfilePage() {
       setUser({
         username: userData.username || "",
         email: userData.email || "",
-        fullName: userData.fullName || "John Doe",
+        fullName: userData.fullName || "Hoang Minh",
         bio:
           userData.bio ||
           "Frontend developer with 5+ years of experience building responsive and user-friendly web applications. Passionate about clean code and modern web technologies.",
