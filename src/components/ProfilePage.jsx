@@ -16,7 +16,7 @@ export default function ProfilePage() {
     const storedUser = localStorage.getItem("user")
 
     if (!storedUser) {
-      router.push("/login")
+      router("/login")
       return
     }
 
@@ -54,7 +54,6 @@ export default function ProfilePage() {
   }, [router])
 
   function handleLogout() {
-    localStorage.removeItem("user")
     router("/login")
   }
 
